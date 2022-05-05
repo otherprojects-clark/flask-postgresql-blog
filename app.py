@@ -1,13 +1,9 @@
-from cherrypy import url
 from flask import Flask, render_template, request, flash, get_flashed_messages, redirect, url_for
 from db.db import Database
 from secrets import token_hex
 from core.data import ctx, postdata
 from arrow import utcnow
-from core.constants import reset, success
 from colorama import init
-# from time import sleep
-from asyncio import run, sleep
 
 init()
 

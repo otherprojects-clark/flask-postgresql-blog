@@ -1,6 +1,5 @@
 from json import load
 from psycopg2 import connect
-from core.constants import reset, success
 
 class Database:
   # db/login.json instead of login.json, because it is imported by app.py
