@@ -1,3 +1,4 @@
 static/uikit/**/* linguist-vendored
 static/lib/**/* linguist-vendored
+static/build linguist-generated
 * eol=crlf
