@@ -1,0 +1,16 @@
+node_modules
+*__pycache__
+.idea
+postgres
+
+!static/uikit/css/uikit.css
+!static/uikit/js/uikit.js
+static/uikit/**/*
+static/build
+
+test.*
+test
+
+*.sublime-workspace
+*.sublime-project
+*.afdesign

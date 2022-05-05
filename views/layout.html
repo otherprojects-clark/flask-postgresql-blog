@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="{{ url_for(endpoint='static', filename='build/style.css')}}">
+  <script src="{{ url_for(endpoint='static', filename='main.js') }}"></script>
+
+  <link rel="stylesheet" href="{{ url_for(endpoint='static', filename='uikit/css/uikit.css') }}">
+  <script src="{{ url_for(endpoint='static', filename='uikit/js/uikit.js') }}"></script>
+
+  <link rel="stylesheet" href="{{ url_for(endpoint='static', filename='lib/all.min.css') }}">
+
+
+  <title> {% block title %} {% endblock %} </title>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/" class="brand"> {{ ctx.title }} </a>
+    <div>
+      <a href="/about">About</a><!--
+      <a href="">b</a>
+      <a href="">c</a> -->
+    </div>
+    <div>
+      {# {% if context.login %}
+        <div> logout </div>
+      {% else %}
+        <a href="/login">login </a>
+      {% endif %} #}
+    </div>
+  </nav>
+  <div >
+  </div>
+  <div>
+    {% block content %} {% endblock %}
+  </div>
+</body>
+</html>

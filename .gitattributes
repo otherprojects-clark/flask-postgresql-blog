@@ -1,0 +1,3 @@
+static/uikit/**/* linguist-vendored
+static/lib/**/* linguist-vendored
+* eol=crlf

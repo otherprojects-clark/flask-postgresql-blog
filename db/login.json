@@ -1,0 +1,6 @@
+{
+  "user": "blog",
+  "password": "blog",
+  "database": "blog",
+  "port": 5432
+}

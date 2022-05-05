@@ -1,0 +1,44 @@
+{
+  "Expression": {
+    "scope": "jinja-html",
+    "prefix": "exp",
+    "body": "{% $1 %}",
+    "description": "Expresion"
+  },
+  "extends": {
+    "scope": "jinja-html",
+    "prefix": "ext",
+    "body": "{% extends \"$1\" %}",
+    "description": "extends"
+  },
+  "url_for static": {
+    "scope": "jinja-html",
+    "prefix": "url_for",
+    "body": "url_for(endpoint='static', filename='$1')"
+  },
+  "class": {
+    "scope": "jinja-html, meta.tag.structure",
+    "prefix": "c",
+    "body": "class=\"$1\"",
+    "description": "class attrib"
+  },
+  "render template": {
+    "scope": "python",
+    "prefix": "rendt",
+    "body": "render_template(\"$1\", ctx=ctx())"
+  },
+  "contentblock": {
+    "scope": "jinja-html",
+    "prefix": "contentb",
+    "body": [
+      "{% block content %}",
+      "$1",
+      "{% endblock %}"
+    ]
+  },
+  "titleblock": {
+    "scope": "jinja-html",
+    "prefix": "titleb",
+    "body": "{% block title %} $1 {% endblock %}"
+  }
+}

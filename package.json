@@ -1,0 +1,23 @@
+{
+  "name": "flask-postgresql-blog",
+  "version": "1.0.0",
+  "description": "Flask - PostgreSQL Blog",
+  "author": "Clark",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "concurrently": "^7.1.0",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nested": "^5.0.6"
+  },
+  "scripts": {
+    "dev": "concurrently \"yarn:start:*\"",
+    "start:flask": "node js/flask.mjs",
+    "start:postcss": "postcss -w ./static/styles/*.css -d ./static/build --config . --verbose",
+    "flask": "yarn start:flask",
+    "postcss": "yarn start:postcss"
+  }
+}

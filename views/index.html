@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Welcome to <span style="font-weight: bold">{{ctx.title}}</span>! </h1>
+  <div>Create your first post now:
+    <button class="create-post button" onclick="createPostLink()">Create Post</button>
+  </div>
+  <div>
+    Take a look at this list of your posts: 
+    <button class="button" onclick="postsLink()">Posts</button>
+  </div>
+  <div class="uk-margin-medium-top">
+    <strong>Note:</strong> Still maintaining the client-side
+  </div>
+</div>
+{% endblock %}

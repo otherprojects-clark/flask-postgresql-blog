@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %} {{ ctx.user }} - Posts {% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div style="text-align: center;">
+  {% if posts == [] %}
+    <div>You currently don't have any posts. </div>
+  {% else %}
+    {% for x in posts %}
+      <div><a href=/post/{{x[id]}}>{{x[title]}}</a></div> 
+      <div>Created At: {{x[createdAt]}}</div>
+      <br> 
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+{% extends "$1" %}
+]]></content>
+	<scope>text.jinja</scope>
+	<tabTrigger>ext</tabTrigger>
+	<description>extends</description>
+</snippet>
+	

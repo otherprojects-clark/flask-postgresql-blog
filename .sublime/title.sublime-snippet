@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+{% block title %} $1 {% endblock %}
+]]></content>
+	<scope>
+		text.html.basic,
+		text.jinja
+	</scope>
+	<tabTrigger>titleb</tabTrigger>
+	<description>title block</description>
+</snippet>
+	

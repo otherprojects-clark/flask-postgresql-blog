@@ -1,0 +1,127 @@
+@define-mixin container {
+  display: flex;
+  margin: 20px 300px;
+  flex-direction: column;
+}
+
+// parent center
+.center {
+  display: flex;
+  justify-content: start;
+}
+
+// prevent button from being stretched
+button {
+  width: fit-content;
+}
+
+
+// button styles
+button  {
+  border-style: none;
+  background-color: aqua;
+}
+
+.fa-trash, .delete {
+
+}
+
+// font config
+html {
+  font-family: Inter !important;
+}
+* {
+  box-sizing: border-box;
+  font-family: Inter !important; 
+}
+i {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  justify-content: center;
+  background-color: #402cd3;
+  padding: 15px 0;
+  * {
+    display: flex;
+    justify-content: center;
+  }
+  div {
+    gap: 10px;
+  }
+  a,div {
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .brand {
+    font-weight: bold;
+  }
+  .brand:hover {
+    color: white;
+  }
+}
+
+
+.formbox {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.create-form {
+  display: grid;
+  gap: 10px;
+}
+
+
+.form-flex {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 7px;
+}
+.my {
+  margin: 20px 0;
+}
+
+.submit {
+  margin-top: 15px !important;
+  border-radius: 13px !important;
+  max-width: 100px;
+  padding: 0 !important;
+}
+
+.container {
+  @mixin container
+}
+
+
+.create-post {
+  background-color: #3884c7;
+  color: white;
+}
+
+
+.button {
+  width: fit-content;
+  border-style: none;
+  border-radius: 13px;
+  padding: 5px 10px;
+}
+.button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+.button:active {
+  transform: translateY(-3);
+  filter: brightness(75%);
+}

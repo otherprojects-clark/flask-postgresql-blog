@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+url_for(endpoint='static', filename='$1')
+]]></content>
+	<scope>text.jinja</scope>
+	<tabTrigger>url_for</tabTrigger>
+	<description>url_for static</description>
+</snippet>
+	

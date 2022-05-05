@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+render_template("$1", ctx=ctx())
+]]></content>
+	<scope>
+		source.python
+	</scope>
+	<tabTrigger>rendt</tabTrigger>
+	<description>render template</description>
+</snippet>
+	

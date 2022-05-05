@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %} Delete Post {{id}} {% endblock %}
+
+{% block content %}
+<div class="container">
+  Are you sure you want to delete "{{ post[title] }}"?
+  <div>
+    <form action="" method="POST">
+      <div class="uk-flex uk-flex-column">
+        <div>
+          <input type="radio" name="delete" value="false" checked>
+          Nope, I'll keep it
+        </div>
+        <div>
+          <input type="radio" name="delete" value="true">
+          Yes, I do
+        </div>
+      </div>
+      <br>
+      <input type="submit" value="ok" class="uk-margin-small-top uk-button uk-button-danger" >
+    </form>
+    <button onclick="postsLink()" class="uk-button-primary uk-button"> Cancel </button>
+  </div>  
+</div>
+
+{% endblock %}

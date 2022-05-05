@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+url_for(endpoint='static', filename='$1')
+]]></content>
+	<scope>
+		text.html.basic,
+		meta.tag.block.any.html,
+		text.jinja
+	</scope>
+	<tabTrigger>c</tabTrigger>
+	<description>class</description>
+</snippet>
+	

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %} {{post[title]}} {% endblock %}
+{# <head>
+  <style> 
+  button {
+    top: 20px;
+  }
+  </style>
+</head> #}
+
+{% block content %}
+<div class="uk-text-center container">
+  {% if id not in ids %}
+    <div> Post with id {{ id }} not found </div>
+  {% else %}
+    <div>{{ post[title] }}</div>
+    <div>{{ post[content] }}</div>
+    <div>createdat: {{ post[createdAt] }}</div>
+
+    <div class="center">
+      <a href="/edit/{{id}}" class="uk-text-secondary uk-text-decoration-none">
+        <button>
+          <i class="fas fa-pencil edit"></i>
+        </button>
+      </a>  
+      <a href="/delete/{{id}}" class="uk-text-secondary uk-text-decoration-none">
+        <button> 
+          <i class="fas fa-trash delete"></i>
+        </button>
+      </a>
+    </div>
+
+
+  {% endif %}
+</div>
+
+{% endblock %}
