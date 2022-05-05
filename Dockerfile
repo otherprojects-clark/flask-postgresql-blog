@@ -1,8 +1,8 @@
-from postgres:latest
-copy . .
+FROM postgres:latest
+COPY . .
 
-env POSTGRES_DB=blog
-env POSTGRES_USER=blog
-env POSTGRES_PASSWORD=blog 
+ENV POSTGRES_DB=blog
+ENV POSTGRES_USER=blog
+ENV POSTGRES_PASSWORD=blog 
 
-expose 5432
+EXPOSE 5432
